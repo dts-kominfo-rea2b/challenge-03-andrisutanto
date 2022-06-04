@@ -33,7 +33,7 @@ const dataBelanjaan = [
   function totalBelanjaan(data) {
     let total = 0;
     data.forEach((totalBelanja) => {
-        total = total(totalBelanja.harga * totalBelanja.kuantitas);
+        total = total + (totalBelanja.harga * totalBelanja.kuantitas);
      });
     return total;
   }
